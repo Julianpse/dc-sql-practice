@@ -96,3 +96,30 @@ SELECT * FROM restaurant WHERE last_eaten_in_weeks > 1;
 -- restaurants you haven't ate at in the last week and has 5 stars
 SELECT * FROM restaurant WHERE last_eaten_in_weeks > 1 AND stars = 5;
 
+
+--AGGREGATION AND SORTING QUERIES
+
+--list restaurants by the closest distance.
+SELECT * FROM restaurant GROUP BY distance;
+
+--list the top 2 restaurants by distance.
+SELECT * FROM restaurant ORDER BY distance LIMIT 2;
+
+-- list the top 2 restaurants by stars.
+SELECT * FROM restaurant ORDER BY stars DESC LIMIT 2;
+
+-- list the top 2 restaurants by stars where the distance is less than 2 miles. 
+-- did <= instead of < becuase I didn't have any restaurants less than 2 miles in my DB.
+SELECT * FROM restaurant WHERE distance <= 2 ORDER BY stars DESC LIMIT 2;
+
+-- count the number of restaurants in the db.
+SELECT COUNT(*) FROM restaurant;
+
+-- count the number of restaurants by category.
+
+
+-- get the average stars per restaurant by category.
+
+
+-- get the max stars of a restaurant by category.
+
