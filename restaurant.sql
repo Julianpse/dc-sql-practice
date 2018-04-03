@@ -66,13 +66,13 @@ SELECT id FROM restaurant WHERE name = 'carrabbas';
 SELECT * FROM restaurant WHERE category = 'bbq';
 
 -- restaurants that do take out
-SELECT * FROM restaurant where takeout = FALSE;
+SELECT * FROM restaurant WHERE takeout = FALSE;
 
 -- restaurants that do take out and is in the category of 'BBQ'
-SELECT * FROM restaurant where takeout = TRUE AND category = 'bbq';
+SELECT * FROM restaurant WHERE takeout = TRUE AND category = 'bbq';
 
 -- restaurants within 2 miles
-SELECT * FROM restaurant where distance <= 2;
+SELECT * FROM restaurant WHERE distance <= 2;
 
 -- restaurants you haven't ate at in the last week
 
