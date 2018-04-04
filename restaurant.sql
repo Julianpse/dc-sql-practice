@@ -116,10 +116,10 @@ SELECT * FROM restaurant WHERE distance <= 2 ORDER BY stars DESC LIMIT 2;
 SELECT COUNT(*) FROM restaurant;
 
 -- count the number of restaurants by category.
-
+SELECT category, COUNT(*) FROM restaurant GROUP BY category;
 
 -- get the average stars per restaurant by category.
-
+SELECT category, AVG(stars) FROM restaurant GROUP BY category;
 
 -- get the max stars of a restaurant by category.
-
+SELECT category, MAX(stars) FROM restaurant GROUP BY category;
